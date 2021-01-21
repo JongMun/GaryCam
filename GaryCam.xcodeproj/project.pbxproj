@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF20FB8825B93A8B0014EFD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FB8725B93A8B0014EFD0 /* AppDelegate.swift */; };
+		FF20FB8A25B93A8B0014EFD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FB8925B93A8B0014EFD0 /* SceneDelegate.swift */; };
+		FF20FB8C25B93A8B0014EFD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FB8B25B93A8B0014EFD0 /* ViewController.swift */; };
+		FF20FB8F25B93A8B0014EFD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF20FB8D25B93A8B0014EFD0 /* Main.storyboard */; };
+		FF20FB9125B93A8F0014EFD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF20FB9025B93A8F0014EFD0 /* Assets.xcassets */; };
+		FF20FB9425B93A8F0014EFD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF20FB9225B93A8F0014EFD0 /* LaunchScreen.storyboard */; };
+		FF20FB9F25B93A8F0014EFD0 /* GaryCamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FB9E25B93A8F0014EFD0 /* GaryCamTests.swift */; };
+		FF20FBAA25B93A8F0014EFD0 /* GaryCamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FBA925B93A8F0014EFD0 /* GaryCamUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF20FB9B25B93A8F0014EFD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF20FB7C25B93A8B0014EFD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF20FB8325B93A8B0014EFD0;
+			remoteInfo = GaryCam;
+		};
+		FF20FBA625B93A8F0014EFD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF20FB7C25B93A8B0014EFD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF20FB8325B93A8B0014EFD0;
+			remoteInfo = GaryCam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF20FB8425B93A8B0014EFD0 /* GaryCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaryCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF20FB8725B93A8B0014EFD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF20FB8925B93A8B0014EFD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF20FB8B25B93A8B0014EFD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF20FB8E25B93A8B0014EFD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF20FB9025B93A8F0014EFD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF20FB9325B93A8F0014EFD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF20FB9525B93A8F0014EFD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF20FB9A25B93A8F0014EFD0 /* GaryCamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaryCamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF20FB9E25B93A8F0014EFD0 /* GaryCamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaryCamTests.swift; sourceTree = "<group>"; };
+		FF20FBA025B93A8F0014EFD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF20FBA525B93A8F0014EFD0 /* GaryCamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaryCamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF20FBA925B93A8F0014EFD0 /* GaryCamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaryCamUITests.swift; sourceTree = "<group>"; };
+		FF20FBAB25B93A8F0014EFD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF20FB8125B93A8B0014EFD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF20FB9725B93A8F0014EFD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF20FBA225B93A8F0014EFD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF20FB7B25B93A8B0014EFD0 = {
+			isa = PBXGroup;
+			children = (
+				FF20FB8625B93A8B0014EFD0 /* GaryCam */,
+				FF20FB9D25B93A8F0014EFD0 /* GaryCamTests */,
+				FF20FBA825B93A8F0014EFD0 /* GaryCamUITests */,
+				FF20FB8525B93A8B0014EFD0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF20FB8525B93A8B0014EFD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF20FB8425B93A8B0014EFD0 /* GaryCam.app */,
+				FF20FB9A25B93A8F0014EFD0 /* GaryCamTests.xctest */,
+				FF20FBA525B93A8F0014EFD0 /* GaryCamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF20FB8625B93A8B0014EFD0 /* GaryCam */ = {
+			isa = PBXGroup;
+			children = (
+				FF20FB8725B93A8B0014EFD0 /* AppDelegate.swift */,
+				FF20FB8925B93A8B0014EFD0 /* SceneDelegate.swift */,
+				FF20FB8B25B93A8B0014EFD0 /* ViewController.swift */,
+				FF20FB8D25B93A8B0014EFD0 /* Main.storyboard */,
+				FF20FB9025B93A8F0014EFD0 /* Assets.xcassets */,
+				FF20FB9225B93A8F0014EFD0 /* LaunchScreen.storyboard */,
+				FF20FB9525B93A8F0014EFD0 /* Info.plist */,
+			);
+			path = GaryCam;
+			sourceTree = "<group>";
+		};
+		FF20FB9D25B93A8F0014EFD0 /* GaryCamTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF20FB9E25B93A8F0014EFD0 /* GaryCamTests.swift */,
+				FF20FBA025B93A8F0014EFD0 /* Info.plist */,
+			);
+			path = GaryCamTests;
+			sourceTree = "<group>";
+		};
+		FF20FBA825B93A8F0014EFD0 /* GaryCamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF20FBA925B93A8F0014EFD0 /* GaryCamUITests.swift */,
+				FF20FBAB25B93A8F0014EFD0 /* Info.plist */,
+			);
+			path = GaryCamUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF20FB8325B93A8B0014EFD0 /* GaryCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF20FBAE25B93A8F0014EFD0 /* Build configuration list for PBXNativeTarget "GaryCam" */;
+			buildPhases = (
+				FF20FB8025B93A8B0014EFD0 /* Sources */,
+				FF20FB8125B93A8B0014EFD0 /* Frameworks */,
+				FF20FB8225B93A8B0014EFD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GaryCam;
+			productName = GaryCam;
+			productReference = FF20FB8425B93A8B0014EFD0 /* GaryCam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF20FB9925B93A8F0014EFD0 /* GaryCamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF20FBB125B93A8F0014EFD0 /* Build configuration list for PBXNativeTarget "GaryCamTests" */;
+			buildPhases = (
+				FF20FB9625B93A8F0014EFD0 /* Sources */,
+				FF20FB9725B93A8F0014EFD0 /* Frameworks */,
+				FF20FB9825B93A8F0014EFD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF20FB9C25B93A8F0014EFD0 /* PBXTargetDependency */,
+			);
+			name = GaryCamTests;
+			productName = GaryCamTests;
+			productReference = FF20FB9A25B93A8F0014EFD0 /* GaryCamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF20FBA425B93A8F0014EFD0 /* GaryCamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF20FBB425B93A8F0014EFD0 /* Build configuration list for PBXNativeTarget "GaryCamUITests" */;
+			buildPhases = (
+				FF20FBA125B93A8F0014EFD0 /* Sources */,
+				FF20FBA225B93A8F0014EFD0 /* Frameworks */,
+				FF20FBA325B93A8F0014EFD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF20FBA725B93A8F0014EFD0 /* PBXTargetDependency */,
+			);
+			name = GaryCamUITests;
+			productName = GaryCamUITests;
+			productReference = FF20FBA525B93A8F0014EFD0 /* GaryCamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF20FB7C25B93A8B0014EFD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					FF20FB8325B93A8B0014EFD0 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					FF20FB9925B93A8F0014EFD0 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = FF20FB8325B93A8B0014EFD0;
+					};
+					FF20FBA425B93A8F0014EFD0 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = FF20FB8325B93A8B0014EFD0;
+					};
+				};
+			};
+			buildConfigurationList = FF20FB7F25B93A8B0014EFD0 /* Build configuration list for PBXProject "GaryCam" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF20FB7B25B93A8B0014EFD0;
+			productRefGroup = FF20FB8525B93A8B0014EFD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF20FB8325B93A8B0014EFD0 /* GaryCam */,
+				FF20FB9925B93A8F0014EFD0 /* GaryCamTests */,
+				FF20FBA425B93A8F0014EFD0 /* GaryCamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF20FB8225B93A8B0014EFD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF20FB9425B93A8F0014EFD0 /* LaunchScreen.storyboard in Resources */,
+				FF20FB9125B93A8F0014EFD0 /* Assets.xcassets in Resources */,
+				FF20FB8F25B93A8B0014EFD0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF20FB9825B93A8F0014EFD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF20FBA325B93A8F0014EFD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF20FB8025B93A8B0014EFD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF20FB8C25B93A8B0014EFD0 /* ViewController.swift in Sources */,
+				FF20FB8825B93A8B0014EFD0 /* AppDelegate.swift in Sources */,
+				FF20FB8A25B93A8B0014EFD0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF20FB9625B93A8F0014EFD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF20FB9F25B93A8F0014EFD0 /* GaryCamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF20FBA125B93A8F0014EFD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF20FBAA25B93A8F0014EFD0 /* GaryCamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF20FB9C25B93A8F0014EFD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF20FB8325B93A8B0014EFD0 /* GaryCam */;
+			targetProxy = FF20FB9B25B93A8F0014EFD0 /* PBXContainerItemProxy */;
+		};
+		FF20FBA725B93A8F0014EFD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF20FB8325B93A8B0014EFD0 /* GaryCam */;
+			targetProxy = FF20FBA625B93A8F0014EFD0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF20FB8D25B93A8B0014EFD0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF20FB8E25B93A8B0014EFD0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF20FB9225B93A8F0014EFD0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF20FB9325B93A8F0014EFD0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF20FBAC25B93A8F0014EFD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF20FBAD25B93A8F0014EFD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF20FBAF25B93A8F0014EFD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TQ3U3269X7;
+				INFOPLIST_FILE = GaryCam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeong.GaryCam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF20FBB025B93A8F0014EFD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TQ3U3269X7;
+				INFOPLIST_FILE = GaryCam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeong.GaryCam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF20FBB225B93A8F0014EFD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TQ3U3269X7;
+				INFOPLIST_FILE = GaryCamTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeong.GaryCamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GaryCam.app/GaryCam";
+			};
+			name = Debug;
+		};
+		FF20FBB325B93A8F0014EFD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TQ3U3269X7;
+				INFOPLIST_FILE = GaryCamTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeong.GaryCamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GaryCam.app/GaryCam";
+			};
+			name = Release;
+		};
+		FF20FBB525B93A8F0014EFD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TQ3U3269X7;
+				INFOPLIST_FILE = GaryCamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeong.GaryCamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GaryCam;
+			};
+			name = Debug;
+		};
+		FF20FBB625B93A8F0014EFD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TQ3U3269X7;
+				INFOPLIST_FILE = GaryCamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeong.GaryCamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GaryCam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF20FB7F25B93A8B0014EFD0 /* Build configuration list for PBXProject "GaryCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF20FBAC25B93A8F0014EFD0 /* Debug */,
+				FF20FBAD25B93A8F0014EFD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF20FBAE25B93A8F0014EFD0 /* Build configuration list for PBXNativeTarget "GaryCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF20FBAF25B93A8F0014EFD0 /* Debug */,
+				FF20FBB025B93A8F0014EFD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF20FBB125B93A8F0014EFD0 /* Build configuration list for PBXNativeTarget "GaryCamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF20FBB225B93A8F0014EFD0 /* Debug */,
+				FF20FBB325B93A8F0014EFD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF20FBB425B93A8F0014EFD0 /* Build configuration list for PBXNativeTarget "GaryCamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF20FBB525B93A8F0014EFD0 /* Debug */,
+				FF20FBB625B93A8F0014EFD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF20FB7C25B93A8B0014EFD0 /* Project object */;
+}
