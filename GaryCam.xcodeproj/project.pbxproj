@@ -3,18 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85326AE3072721EB682C5090 /* Pods_GaryCamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F935D52041048274203CA3A3 /* Pods_GaryCamTests.framework */; };
+		D343A415774C0E3EDD26E134 /* Pods_GaryCam_GaryCamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBEB94C1AA0B57B22ABD715 /* Pods_GaryCam_GaryCamUITests.framework */; };
+		DFC491648CC5FD9D63B23ADB /* Pods_GaryCam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F871BE0A024C63CBF03241F5 /* Pods_GaryCam.framework */; };
 		FF20FB8825B93A8B0014EFD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FB8725B93A8B0014EFD0 /* AppDelegate.swift */; };
 		FF20FB8A25B93A8B0014EFD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FB8925B93A8B0014EFD0 /* SceneDelegate.swift */; };
-		FF20FB8C25B93A8B0014EFD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FB8B25B93A8B0014EFD0 /* ViewController.swift */; };
 		FF20FB8F25B93A8B0014EFD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF20FB8D25B93A8B0014EFD0 /* Main.storyboard */; };
 		FF20FB9125B93A8F0014EFD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF20FB9025B93A8F0014EFD0 /* Assets.xcassets */; };
 		FF20FB9425B93A8F0014EFD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF20FB9225B93A8F0014EFD0 /* LaunchScreen.storyboard */; };
 		FF20FB9F25B93A8F0014EFD0 /* GaryCamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FB9E25B93A8F0014EFD0 /* GaryCamTests.swift */; };
 		FF20FBAA25B93A8F0014EFD0 /* GaryCamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FBA925B93A8F0014EFD0 /* GaryCamUITests.swift */; };
+		FF20FBD525B93ED70014EFD0 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FBD425B93ED70014EFD0 /* HttpRequest.swift */; };
+		FF20FBDB25B93EFA0014EFD0 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FBDA25B93EFA0014EFD0 /* Member.swift */; };
+		FF20FBE325B93F240014EFD0 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FBE225B93F240014EFD0 /* SignInViewController.swift */; };
+		FF20FBF125B943040014EFD0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FBF025B943040014EFD0 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +41,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		170CAEE867F0AFE4ABFF012D /* Pods-GaryCamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaryCamTests.release.xcconfig"; path = "Target Support Files/Pods-GaryCamTests/Pods-GaryCamTests.release.xcconfig"; sourceTree = "<group>"; };
+		19A1ACE086C6A2CC9D1E8491 /* Pods-GaryCam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaryCam.release.xcconfig"; path = "Target Support Files/Pods-GaryCam/Pods-GaryCam.release.xcconfig"; sourceTree = "<group>"; };
+		93B030ADF92C82452D1AD9E0 /* Pods-GaryCamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaryCamTests.debug.xcconfig"; path = "Target Support Files/Pods-GaryCamTests/Pods-GaryCamTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D0380F3A0C63E451BD8DFFC2 /* Pods-GaryCam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaryCam.debug.xcconfig"; path = "Target Support Files/Pods-GaryCam/Pods-GaryCam.debug.xcconfig"; sourceTree = "<group>"; };
+		E9B50F6E2D15A422BCC9984B /* Pods-GaryCam-GaryCamUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaryCam-GaryCamUITests.release.xcconfig"; path = "Target Support Files/Pods-GaryCam-GaryCamUITests/Pods-GaryCam-GaryCamUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EB6C1751A9FDCD948350262D /* Pods-GaryCam-GaryCamUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GaryCam-GaryCamUITests.debug.xcconfig"; path = "Target Support Files/Pods-GaryCam-GaryCamUITests/Pods-GaryCam-GaryCamUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F871BE0A024C63CBF03241F5 /* Pods_GaryCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GaryCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F935D52041048274203CA3A3 /* Pods_GaryCamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GaryCamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBBEB94C1AA0B57B22ABD715 /* Pods_GaryCam_GaryCamUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GaryCam_GaryCamUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF20FB8425B93A8B0014EFD0 /* GaryCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaryCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF20FB8725B93A8B0014EFD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF20FB8925B93A8B0014EFD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FF20FB8B25B93A8B0014EFD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF20FB8E25B93A8B0014EFD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF20FB9025B93A8F0014EFD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF20FB9325B93A8F0014EFD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +63,10 @@
 		FF20FBA525B93A8F0014EFD0 /* GaryCamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaryCamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF20FBA925B93A8F0014EFD0 /* GaryCamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaryCamUITests.swift; sourceTree = "<group>"; };
 		FF20FBAB25B93A8F0014EFD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF20FBD425B93ED70014EFD0 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		FF20FBDA25B93EFA0014EFD0 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		FF20FBE225B93F240014EFD0 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		FF20FBF025B943040014EFD0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFC491648CC5FD9D63B23ADB /* Pods_GaryCam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85326AE3072721EB682C5090 /* Pods_GaryCamTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +90,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D343A415774C0E3EDD26E134 /* Pods_GaryCam_GaryCamUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70734361CEF89CF7E04D1A57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F871BE0A024C63CBF03241F5 /* Pods_GaryCam.framework */,
+				FBBEB94C1AA0B57B22ABD715 /* Pods_GaryCam_GaryCamUITests.framework */,
+				F935D52041048274203CA3A3 /* Pods_GaryCamTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1E7AD096777C58B7506CB22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0380F3A0C63E451BD8DFFC2 /* Pods-GaryCam.debug.xcconfig */,
+				19A1ACE086C6A2CC9D1E8491 /* Pods-GaryCam.release.xcconfig */,
+				EB6C1751A9FDCD948350262D /* Pods-GaryCam-GaryCamUITests.debug.xcconfig */,
+				E9B50F6E2D15A422BCC9984B /* Pods-GaryCam-GaryCamUITests.release.xcconfig */,
+				93B030ADF92C82452D1AD9E0 /* Pods-GaryCamTests.debug.xcconfig */,
+				170CAEE867F0AFE4ABFF012D /* Pods-GaryCamTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FF20FB7B25B93A8B0014EFD0 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +127,8 @@
 				FF20FB9D25B93A8F0014EFD0 /* GaryCamTests */,
 				FF20FBA825B93A8F0014EFD0 /* GaryCamUITests */,
 				FF20FB8525B93A8B0014EFD0 /* Products */,
+				F1E7AD096777C58B7506CB22 /* Pods */,
+				70734361CEF89CF7E04D1A57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +145,12 @@
 		FF20FB8625B93A8B0014EFD0 /* GaryCam */ = {
 			isa = PBXGroup;
 			children = (
+				FF20FBC325B93D040014EFD0 /* Extension */,
+				FF20FBC225B93CFA0014EFD0 /* View */,
+				FF20FBC125B93CF40014EFD0 /* Model */,
+				FF20FBC025B93CEC0014EFD0 /* Controller */,
 				FF20FB8725B93A8B0014EFD0 /* AppDelegate.swift */,
 				FF20FB8925B93A8B0014EFD0 /* SceneDelegate.swift */,
-				FF20FB8B25B93A8B0014EFD0 /* ViewController.swift */,
-				FF20FB8D25B93A8B0014EFD0 /* Main.storyboard */,
 				FF20FB9025B93A8F0014EFD0 /* Assets.xcassets */,
 				FF20FB9225B93A8F0014EFD0 /* LaunchScreen.storyboard */,
 				FF20FB9525B93A8F0014EFD0 /* Info.plist */,
@@ -128,6 +176,39 @@
 			path = GaryCamUITests;
 			sourceTree = "<group>";
 		};
+		FF20FBC025B93CEC0014EFD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF20FBE225B93F240014EFD0 /* SignInViewController.swift */,
+				FF20FBF025B943040014EFD0 /* SignUpViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF20FBC125B93CF40014EFD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF20FBDA25B93EFA0014EFD0 /* Member.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF20FBC225B93CFA0014EFD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF20FB8D25B93A8B0014EFD0 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF20FBC325B93D040014EFD0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FF20FBD425B93ED70014EFD0 /* HttpRequest.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF20FBAE25B93A8F0014EFD0 /* Build configuration list for PBXNativeTarget "GaryCam" */;
 			buildPhases = (
+				D2B2EBAB2352AC937A554065 /* [CP] Check Pods Manifest.lock */,
 				FF20FB8025B93A8B0014EFD0 /* Sources */,
 				FF20FB8125B93A8B0014EFD0 /* Frameworks */,
 				FF20FB8225B93A8B0014EFD0 /* Resources */,
+				5E017C4DF03386531C8F8872 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +235,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF20FBB125B93A8F0014EFD0 /* Build configuration list for PBXNativeTarget "GaryCamTests" */;
 			buildPhases = (
+				99836BCCBD55DB898F9EBA84 /* [CP] Check Pods Manifest.lock */,
 				FF20FB9625B93A8F0014EFD0 /* Sources */,
 				FF20FB9725B93A8F0014EFD0 /* Frameworks */,
 				FF20FB9825B93A8F0014EFD0 /* Resources */,
@@ -170,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF20FBB425B93A8F0014EFD0 /* Build configuration list for PBXNativeTarget "GaryCamUITests" */;
 			buildPhases = (
+				7FE08E22EA202B72CF08564B /* [CP] Check Pods Manifest.lock */,
 				FF20FBA125B93A8F0014EFD0 /* Sources */,
 				FF20FBA225B93A8F0014EFD0 /* Frameworks */,
 				FF20FBA325B93A8F0014EFD0 /* Resources */,
+				5CDEF99CF0621D67D2CF9B96 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +339,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5CDEF99CF0621D67D2CF9B96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GaryCam-GaryCamUITests/Pods-GaryCam-GaryCamUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GaryCam-GaryCamUITests/Pods-GaryCam-GaryCamUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GaryCam-GaryCamUITests/Pods-GaryCam-GaryCamUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E017C4DF03386531C8F8872 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GaryCam/Pods-GaryCam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GaryCam/Pods-GaryCam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GaryCam/Pods-GaryCam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FE08E22EA202B72CF08564B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GaryCam-GaryCamUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99836BCCBD55DB898F9EBA84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GaryCamTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2B2EBAB2352AC937A554065 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GaryCam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FF20FB8025B93A8B0014EFD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF20FB8C25B93A8B0014EFD0 /* ViewController.swift in Sources */,
+				FF20FBF125B943040014EFD0 /* SignUpViewController.swift in Sources */,
+				FF20FBE325B93F240014EFD0 /* SignInViewController.swift in Sources */,
+				FF20FBD525B93ED70014EFD0 /* HttpRequest.swift in Sources */,
 				FF20FB8825B93A8B0014EFD0 /* AppDelegate.swift in Sources */,
 				FF20FB8A25B93A8B0014EFD0 /* SceneDelegate.swift in Sources */,
+				FF20FBDB25B93EFA0014EFD0 /* Member.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +625,7 @@
 		};
 		FF20FBAF25B93A8F0014EFD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0380F3A0C63E451BD8DFFC2 /* Pods-GaryCam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +645,7 @@
 		};
 		FF20FBB025B93A8F0014EFD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19A1ACE086C6A2CC9D1E8491 /* Pods-GaryCam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +665,7 @@
 		};
 		FF20FBB225B93A8F0014EFD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93B030ADF92C82452D1AD9E0 /* Pods-GaryCamTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +688,7 @@
 		};
 		FF20FBB325B93A8F0014EFD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 170CAEE867F0AFE4ABFF012D /* Pods-GaryCamTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +711,7 @@
 		};
 		FF20FBB525B93A8F0014EFD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB6C1751A9FDCD948350262D /* Pods-GaryCam-GaryCamUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +732,7 @@
 		};
 		FF20FBB625B93A8F0014EFD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9B50F6E2D15A422BCC9984B /* Pods-GaryCam-GaryCamUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
