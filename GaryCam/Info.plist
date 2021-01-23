@@ -20,6 +20,17 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Permission needed for taking picture or video</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Permission needed to save picture to camera roll</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Permission needed for saving picture to Camera roll</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

@@ -9,10 +9,12 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    var userTID: String?
+    var info: MemberTempInfo?
+    
+//    @IBOutlet weak var nameView: UILabel!
+//    @IBOutlet weak var tidView: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 }

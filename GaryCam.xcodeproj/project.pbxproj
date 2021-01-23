@@ -10,6 +10,7 @@
 		85326AE3072721EB682C5090 /* Pods_GaryCamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F935D52041048274203CA3A3 /* Pods_GaryCamTests.framework */; };
 		D343A415774C0E3EDD26E134 /* Pods_GaryCam_GaryCamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBEB94C1AA0B57B22ABD715 /* Pods_GaryCam_GaryCamUITests.framework */; };
 		DFC491648CC5FD9D63B23ADB /* Pods_GaryCam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F871BE0A024C63CBF03241F5 /* Pods_GaryCam.framework */; };
+		FF0AC52125BBD57A00B7FFF4 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0AC52025BBD57A00B7FFF4 /* Validation.swift */; };
 		FF20FB8825B93A8B0014EFD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FB8725B93A8B0014EFD0 /* AppDelegate.swift */; };
 		FF20FB8A25B93A8B0014EFD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FB8925B93A8B0014EFD0 /* SceneDelegate.swift */; };
 		FF20FB8F25B93A8B0014EFD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF20FB8D25B93A8B0014EFD0 /* Main.storyboard */; };
@@ -22,10 +23,11 @@
 		FF20FBE325B93F240014EFD0 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FBE225B93F240014EFD0 /* SignInViewController.swift */; };
 		FF20FBF125B943040014EFD0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FBF025B943040014EFD0 /* SignUpViewController.swift */; };
 		FF20FC1025B9523A0014EFD0 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FC0F25B9523A0014EFD0 /* UIExtension.swift */; };
-		FF20FC1825B959E70014EFD0 /* EncryptData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FC1725B959E70014EFD0 /* EncryptData.swift */; };
+		FF20FC1825B959E70014EFD0 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FC1725B959E70014EFD0 /* DataExtension.swift */; };
 		FF20FC2025B98D5A0014EFD0 /* SearchSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FC1F25B98D5A0014EFD0 /* SearchSignViewController.swift */; };
 		FF20FC2D25B99A820014EFD0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FC2C25B99A820014EFD0 /* MainViewController.swift */; };
 		FF20FC3225B9AF2B0014EFD0 /* MassageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FC3125B9AF2B0014EFD0 /* MassageExtension.swift */; };
+		FFCD625525BA14A6004C7326 /* AFConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD625425BA14A6004C7326 /* AFConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,7 @@
 		F871BE0A024C63CBF03241F5 /* Pods_GaryCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GaryCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F935D52041048274203CA3A3 /* Pods_GaryCamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GaryCamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBBEB94C1AA0B57B22ABD715 /* Pods_GaryCam_GaryCamUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GaryCam_GaryCamUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF0AC52025BBD57A00B7FFF4 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		FF20FB8425B93A8B0014EFD0 /* GaryCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaryCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF20FB8725B93A8B0014EFD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF20FB8925B93A8B0014EFD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,10 +76,11 @@
 		FF20FBE225B93F240014EFD0 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		FF20FBF025B943040014EFD0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FF20FC0F25B9523A0014EFD0 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
-		FF20FC1725B959E70014EFD0 /* EncryptData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptData.swift; sourceTree = "<group>"; };
+		FF20FC1725B959E70014EFD0 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
 		FF20FC1F25B98D5A0014EFD0 /* SearchSignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSignViewController.swift; sourceTree = "<group>"; };
 		FF20FC2C25B99A820014EFD0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FF20FC3125B9AF2B0014EFD0 /* MassageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageExtension.swift; sourceTree = "<group>"; };
+		FFCD625425BA14A6004C7326 /* AFConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FF0AC51F25BBD56600B7FFF4 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				FF0AC52025BBD57A00B7FFF4 /* Validation.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
 		FF20FB7B25B93A8B0014EFD0 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +167,7 @@
 		FF20FB8625B93A8B0014EFD0 /* GaryCam */ = {
 			isa = PBXGroup;
 			children = (
+				FFCD625325BA1485004C7326 /* Config */,
 				FF20FBC325B93D040014EFD0 /* Extension */,
 				FF20FBC225B93CFA0014EFD0 /* View */,
 				FF20FBC125B93CF40014EFD0 /* Model */,
@@ -216,6 +229,7 @@
 		FF20FBC325B93D040014EFD0 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FF0AC51F25BBD56600B7FFF4 /* Validation */,
 				FFCD624525BA1024004C7326 /* Network */,
 				FFCD624425BA1014004C7326 /* TextCustom */,
 				FFCD624325BA1000004C7326 /* UserInterface */,
@@ -235,7 +249,7 @@
 		FFCD624425BA1014004C7326 /* TextCustom */ = {
 			isa = PBXGroup;
 			children = (
-				FF20FC1725B959E70014EFD0 /* EncryptData.swift */,
+				FF20FC1725B959E70014EFD0 /* DataExtension.swift */,
 			);
 			path = TextCustom;
 			sourceTree = "<group>";
@@ -246,6 +260,14 @@
 				FF20FBD425B93ED70014EFD0 /* HttpRequest.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		FFCD625325BA1485004C7326 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				FFCD625425BA14A6004C7326 /* AFConfig.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,9 +510,11 @@
 			files = (
 				FF20FC1025B9523A0014EFD0 /* UIExtension.swift in Sources */,
 				FF20FBF125B943040014EFD0 /* SignUpViewController.swift in Sources */,
+				FFCD625525BA14A6004C7326 /* AFConfig.swift in Sources */,
 				FF20FC3225B9AF2B0014EFD0 /* MassageExtension.swift in Sources */,
+				FF0AC52125BBD57A00B7FFF4 /* Validation.swift in Sources */,
 				FF20FBE325B93F240014EFD0 /* SignInViewController.swift in Sources */,
-				FF20FC1825B959E70014EFD0 /* EncryptData.swift in Sources */,
+				FF20FC1825B959E70014EFD0 /* DataExtension.swift in Sources */,
 				FF20FBD525B93ED70014EFD0 /* HttpRequest.swift in Sources */,
 				FF20FB8825B93A8B0014EFD0 /* AppDelegate.swift in Sources */,
 				FF20FC2025B98D5A0014EFD0 /* SearchSignViewController.swift in Sources */,
@@ -680,7 +704,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jeong.GaryCam;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Gary.GaryCam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -700,7 +724,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jeong.GaryCam;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Gary.GaryCam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

@@ -40,7 +40,7 @@
                                     <constraint firstAttribute="height" constant="40" id="hX3-lk-Fx6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2gj-3x-cIg">
                                 <rect key="frame" x="30" y="270.5" width="354" height="40"/>
@@ -48,7 +48,7 @@
                                     <constraint firstAttribute="height" constant="40" id="GWK-KY-IFu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUv-aT-meL" customClass="ButtonTextOnly" customModule="GaryCam" customModuleProvider="target">
                                 <rect key="frame" x="168" y="320.5" width="78" height="30"/>
@@ -56,7 +56,7 @@
                                 <state key="normal" title="비밀번호찾기"/>
                                 <connections>
                                     <action selector="searchPWAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CWp-mk-1Ul"/>
-                                    <segue destination="4Rw-Zp-6Cb" kind="presentation" id="qbz-PJ-4k1"/>
+                                    <segue destination="4Rw-Zp-6Cb" kind="show" identifier="" id="qbz-PJ-4k1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OoE-ZY-xGw" customClass="Button" customModule="GaryCam" customModuleProvider="target">
@@ -79,9 +79,15 @@
                                 <state key="normal" title="회원가입"/>
                                 <connections>
                                     <action selector="signUpAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yes-G7-Ehe"/>
-                                    <segue destination="BFd-Ri-Xuq" kind="presentation" id="zGg-rd-CkS"/>
+                                    <segue destination="BFd-Ri-Xuq" kind="show" id="uZE-kv-lz9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일 형식을 확인해주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABQ-2o-m1D">
+                                <rect key="frame" x="227" y="219" width="157" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -98,6 +104,7 @@
                             <constraint firstItem="6nq-VF-hwF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="XBY-mj-7qg"/>
                             <constraint firstItem="lKd-I0-wVi" firstAttribute="top" secondItem="OHr-To-WDF" secondAttribute="bottom" constant="20" id="XaR-Z1-91v"/>
                             <constraint firstItem="lKd-I0-wVi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Xpy-7B-Vag"/>
+                            <constraint firstItem="ABQ-2o-m1D" firstAttribute="top" secondItem="OHr-To-WDF" secondAttribute="bottom" id="Zm3-vO-YGl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OHr-To-WDF" secondAttribute="trailing" constant="30" id="aSS-2o-nwg"/>
                             <constraint firstItem="OHr-To-WDF" firstAttribute="top" secondItem="6nq-VF-hwF" secondAttribute="bottom" constant="10" id="cOu-fg-sAL"/>
                             <constraint firstItem="izi-lz-ffR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="eaV-mi-vgn"/>
@@ -108,6 +115,7 @@
                             <constraint firstItem="2gj-3x-cIg" firstAttribute="top" secondItem="lKd-I0-wVi" secondAttribute="bottom" constant="10" id="m76-QK-1vP"/>
                             <constraint firstItem="sUv-aT-meL" firstAttribute="top" secondItem="2gj-3x-cIg" secondAttribute="bottom" constant="10" id="qqm-ml-P6J"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="izi-lz-ffR" secondAttribute="trailing" constant="30" id="rjg-m8-1wh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ABQ-2o-m1D" secondAttribute="trailing" constant="30" id="xdT-Ti-21R"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lKd-I0-wVi" secondAttribute="trailing" constant="30" id="ySM-58-X6k"/>
                         </constraints>
                     </view>
@@ -117,6 +125,7 @@
                         <outlet property="passwdField" destination="2gj-3x-cIg" id="HxD-wG-TL3"/>
                         <outlet property="searchPWButton" destination="sUv-aT-meL" id="eAe-On-lL7"/>
                         <outlet property="signUpButton" destination="oBy-17-AIT" id="82v-pB-fvV"/>
+                        <outlet property="validation" destination="ABQ-2o-m1D" id="sBW-9b-zyE"/>
                         <segue destination="mf9-pv-q4w" kind="show" identifier="mainViewSegue" id="8Vr-RE-44h"/>
                     </connections>
                 </viewController>
@@ -144,7 +153,7 @@
                                     <constraint firstAttribute="height" constant="40" id="gux-Me-enI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="name"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezu-1a-8Et">
                                 <rect key="frame" x="30" y="142" width="354" height="22"/>
@@ -158,7 +167,7 @@
                                     <constraint firstAttribute="height" constant="40" id="K4X-AU-cLX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="email"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yoy-cd-Vmu" customClass="Button" customModule="GaryCam" customModuleProvider="target">
                                 <rect key="frame" x="30" y="264" width="354" height="50"/>
@@ -179,6 +188,12 @@
                                     <action selector="closeButtonAction:" destination="4Rw-Zp-6Cb" eventType="touchUpInside" id="OYs-uH-ciQ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일 형식을 확인해주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rkm-Al-Ywn">
+                                <rect key="frame" x="227" y="214" width="157" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XSY-V4-fyS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -200,9 +215,12 @@
                             <constraint firstItem="Yoy-cd-Vmu" firstAttribute="leading" secondItem="XSY-V4-fyS" secondAttribute="leading" constant="30" id="dXX-2u-TXO"/>
                             <constraint firstItem="XSY-V4-fyS" firstAttribute="trailing" secondItem="mde-Vy-mTh" secondAttribute="trailing" constant="30" id="kiJ-mW-PNc"/>
                             <constraint firstItem="yPF-0I-Nrn" firstAttribute="leading" secondItem="XSY-V4-fyS" secondAttribute="leading" constant="30" id="tq2-0i-USL"/>
+                            <constraint firstItem="Rkm-Al-Ywn" firstAttribute="top" secondItem="yPF-0I-Nrn" secondAttribute="bottom" id="vvT-Ay-Nig"/>
+                            <constraint firstItem="XSY-V4-fyS" firstAttribute="trailing" secondItem="Rkm-Al-Ywn" secondAttribute="trailing" constant="30" id="xZW-Ug-9xS"/>
                             <constraint firstItem="mde-Vy-mTh" firstAttribute="top" secondItem="Yoy-cd-Vmu" secondAttribute="bottom" constant="20" id="y6k-4e-jeb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="hEJ-H3-SKd"/>
                     <connections>
                         <outlet property="emailField" destination="yPF-0I-Nrn" id="kbm-eN-Cpa"/>
                         <outlet property="nameField" destination="nO0-m8-1lD" id="T0n-Uf-uyW"/>
@@ -210,7 +228,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uxU-BP-840" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-617" y="771"/>
+            <point key="canvasLocation" x="-799" y="771"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="Iu8-SG-cqS">
@@ -232,7 +250,7 @@
                                     <constraint firstAttribute="height" constant="40" id="2Ma-j0-UfX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="name"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwH-2k-1zS">
                                 <rect key="frame" x="50" y="142" width="334" height="21"/>
@@ -246,7 +264,7 @@
                                     <constraint firstAttribute="height" constant="40" id="vAg-zd-Ukw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="email"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZy-80-aBK">
                                 <rect key="frame" x="50" y="233" width="334" height="21"/>
@@ -260,7 +278,7 @@
                                     <constraint firstAttribute="height" constant="40" id="zk1-i7-bhE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="new-password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 확인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yO-3T-pms">
                                 <rect key="frame" x="50" y="324" width="334" height="21"/>
@@ -274,7 +292,7 @@
                                     <constraint firstAttribute="height" constant="40" id="fCg-dr-zIM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="new-password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C67-eZ-d58" customClass="Button" customModule="GaryCam" customModuleProvider="target">
                                 <rect key="frame" x="30" y="445" width="354" height="50"/>
@@ -283,6 +301,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="완료"/>
+                                <connections>
+                                    <action selector="signUpAction:" destination="BFd-Ri-Xuq" eventType="touchUpInside" id="saL-pa-VuV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pI9-a7-Eg3" customClass="Button" customModule="GaryCam" customModuleProvider="target">
                                 <rect key="frame" x="30" y="515" width="354" height="50"/>
@@ -295,6 +316,12 @@
                                     <action selector="closeButtonAction:" destination="BFd-Ri-Xuq" eventType="touchUpInside" id="zfX-11-k1O"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일 형식을 확인해주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFr-h8-llC">
+                                <rect key="frame" x="227" y="213" width="157" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lWP-ru-xBH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -321,6 +348,7 @@
                             <constraint firstItem="C67-eZ-d58" firstAttribute="leading" secondItem="lWP-ru-xBH" secondAttribute="leading" constant="30" id="aPm-ac-xxU"/>
                             <constraint firstItem="C67-eZ-d58" firstAttribute="top" secondItem="Xhm-0b-wnD" secondAttribute="bottom" constant="50" id="cIb-CY-Dxn"/>
                             <constraint firstItem="lWP-ru-xBH" firstAttribute="trailing" secondItem="iZy-80-aBK" secondAttribute="trailing" constant="30" id="fys-ad-TgE"/>
+                            <constraint firstItem="JFr-h8-llC" firstAttribute="top" secondItem="CIr-HV-lee" secondAttribute="bottom" id="gM6-61-Jwd"/>
                             <constraint firstItem="lWP-ru-xBH" firstAttribute="trailing" secondItem="4yO-3T-pms" secondAttribute="trailing" constant="30" id="hBq-H0-TKy"/>
                             <constraint firstItem="pI9-a7-Eg3" firstAttribute="top" secondItem="C67-eZ-d58" secondAttribute="bottom" constant="20" id="heR-Af-Ujd"/>
                             <constraint firstItem="CIr-HV-lee" firstAttribute="leading" secondItem="lWP-ru-xBH" secondAttribute="leading" constant="30" id="jJf-ls-v2X"/>
@@ -329,8 +357,10 @@
                             <constraint firstItem="CIr-HV-lee" firstAttribute="top" secondItem="RwH-2k-1zS" secondAttribute="bottom" constant="10" id="rAj-gp-b6q"/>
                             <constraint firstItem="EQT-qo-4am" firstAttribute="leading" secondItem="lWP-ru-xBH" secondAttribute="leading" constant="50" id="tax-Fh-8ca"/>
                             <constraint firstItem="MMV-1N-rll" firstAttribute="leading" secondItem="lWP-ru-xBH" secondAttribute="leading" constant="30" id="to9-zx-qSe"/>
+                            <constraint firstItem="lWP-ru-xBH" firstAttribute="trailing" secondItem="JFr-h8-llC" secondAttribute="trailing" constant="30" id="zQB-O6-V9P"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="gsk-V7-Cab"/>
                     <connections>
                         <outlet property="emailField" destination="CIr-HV-lee" id="uJn-Wh-xUx"/>
                         <outlet property="nameField" destination="MMV-1N-rll" id="HMh-qa-iad"/>
@@ -345,9 +375,9 @@
         <!--Main View Controller-->
         <scene sceneID="sfh-6m-OzN">
             <objects>
-                <viewController wantsFullScreenLayout="YES" id="mf9-pv-q4w" customClass="MainViewController" customModule="GaryCam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="mf9-pv-q4w" customClass="MainViewController" customModule="GaryCam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LTu-LM-iQa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="d3g-CL-mfF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -362,6 +392,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
