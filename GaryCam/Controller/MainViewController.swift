@@ -11,10 +11,18 @@ class MainViewController: UIViewController {
 
     var info: MemberTempInfo?
     
-//    @IBOutlet weak var nameView: UILabel!
-//    @IBOutlet weak var tidView: UILabel!
+    @IBOutlet weak var nameView: UILabel!
+    @IBOutlet weak var tidView: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let info = info {
+            self.nameView.text = info.name
+            self.tidView.text = info.tid?.braketText
+        } else {
+            self.nameView.isHidden = true
+            self.tidView.isHidden = true
+        }
     }
 }

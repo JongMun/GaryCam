@@ -73,7 +73,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
             self.emailField.becomeFirstResponder()
             return
         }
-        if !self.emailField.isHidden {
+        if !self.validation.isHidden {
             self.view.messageShow(self, message: "이메일 형식을 확인해주세요.")
             self.emailField.becomeFirstResponder()
             return
@@ -95,7 +95,6 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
             guard let data = completion else {
                 return
             }
-            print(data)
             self.view.messageShow(self, message: "로그인되었습니다.")
             self.performSegue(withIdentifier: "mainViewSegue", sender: data)
         }

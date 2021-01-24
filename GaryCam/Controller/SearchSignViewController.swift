@@ -53,4 +53,25 @@ class SearchSignViewController: UIViewController {
     @IBAction func closeButtonAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    @IBAction func searchAction(_ sender: Any) {
+        // 이름 공백 체크
+        guard let name: String = self.nameField.text,
+              name.isEmpty == false else {
+            self.view.messageShow(self, message: "이름이 공백입니다.")
+            self.nameField.becomeFirstResponder()
+            return
+        }
+        // 이메일 공백 체크
+        guard let email: String = self.emailField.text,
+              email.isEmpty == false else {
+            self.view.messageShow(self, message: "이메일이 공백입니다.")
+            self.emailField.becomeFirstResponder()
+            return
+        }
+        if !self.validation.isHidden {
+            self.view.messageShow(self, message: "이메일 형식을 확인해주세요.")
+            self.emailField.becomeFirstResponder()
+            return
+        }
+    }
 }

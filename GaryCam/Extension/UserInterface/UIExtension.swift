@@ -12,7 +12,6 @@ class TextField: UITextField {
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
-    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
         
@@ -24,12 +23,10 @@ class TextField: UITextField {
         self.layer.shadowOpacity = 0.3
     }
 }
-
 class Button: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
-    
     required init(coder aDecoder: NSCoder)
     {
         super.init(coder: aDecoder)!
@@ -47,12 +44,10 @@ class Button: UIButton {
         self.layer.shadowOpacity = 0.3
     }
 }
-
 class ButtonTextOnly: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
-    
     required init(coder aDecoder: NSCoder)
     {
         super.init(coder: aDecoder)!
@@ -86,7 +81,6 @@ extension UIColor {
         
         self.init(red:red, green:green, blue:blue, alpha:alpha)
     }
-    
     func toHexString() -> String {
         var r:CGFloat = 0
         var g:CGFloat = 0
@@ -99,4 +93,29 @@ extension UIColor {
         
         return String(format:"#%06x", rgb)
     }
+}
+extension UIView {
+    func getConvertedFrame(fromSubview subview: UIView) -> CGRect? {
+        guard subview.isDescendant(of: self) else {
+            return nil
+        }
+
+        var frame = subview.frame
+        if subview.superview == nil {
+            return frame
+        }
+
+        var superview = subview.superview
+        while superview != self {
+            frame = superview!.convert(frame, to: superview!.superview)
+            if superview!.superview == nil {
+                break
+            } else {
+                superview = superview!.superview
+            }
+        }
+
+        return superview!.convert(frame, to: self)
+    }
+
 }

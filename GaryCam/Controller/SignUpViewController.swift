@@ -73,7 +73,7 @@ class SignUpViewController: UIViewController {
             self.emailField.becomeFirstResponder()
             return
         }
-        if !self.emailField.isHidden {
+        if !self.validation.isHidden {
             self.view.messageShow(self, message: "이메일 형식을 확인해주세요.")
             self.emailField.becomeFirstResponder()
             return
