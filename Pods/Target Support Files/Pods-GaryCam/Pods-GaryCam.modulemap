@@ -1,0 +1,6 @@
+framework module Pods_GaryCam {
+  umbrella header "Pods-GaryCam-umbrella.h"
+
+  export *
+  module * { export * }
+}
