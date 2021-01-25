@@ -9,8 +9,6 @@ import UIKit
 import Alamofire
 
 class SearchSignViewController: UIViewController {
-
-    // Outlet Definition
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var validation: UILabel!
@@ -18,9 +16,8 @@ class SearchSignViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Keyboard Setting
+        // 키보드 세팅
         self.emailField.keyboardType = .emailAddress
-        
         self.nameField.text = "정종문"
         self.emailField.text = "wjdwhdans91@gmail.com"
         
@@ -28,11 +25,11 @@ class SearchSignViewController: UIViewController {
         
         self.emailField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
     }
-    // Keyboard Hiding When Other Field Tabbed
+    // 다른 뷰 터치 시 키보드 숨김
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-    // Email TextField Event and Validation Check
+    // 이메일 형식 확인
     @objc func textFieldDidChange(field: UITextField) {
         guard let text = field.text else {
             return
@@ -49,11 +46,12 @@ class SearchSignViewController: UIViewController {
             }
         }
     }
-    // Return to Login View
-    @IBAction func closeButtonAction(_ sender: Any) {
+    // 로그인 화면으로 이동
+    @IBAction func closeButtonAction(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
-    @IBAction func searchAction(_ sender: Any) {
+    // 비밀번호 찾기 액션
+    @IBAction func searchAction(_ sender: UIButton) {
         // 이름 공백 체크
         guard let name: String = self.nameField.text,
               name.isEmpty == false else {

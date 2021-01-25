@@ -12,7 +12,6 @@
 		DFC491648CC5FD9D63B23ADB /* Pods_GaryCam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F871BE0A024C63CBF03241F5 /* Pods_GaryCam.framework */; };
 		FF0AC52125BBD57A00B7FFF4 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0AC52025BBD57A00B7FFF4 /* Validation.swift */; };
 		FF0AC52925BBFCA000B7FFF4 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0AC52825BBFCA000B7FFF4 /* CameraViewController.swift */; };
-		FF0AC52E25BBFCBC00B7FFF4 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0AC52D25BBFCBC00B7FFF4 /* CaptureViewController.swift */; };
 		FF20FB8825B93A8B0014EFD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FB8725B93A8B0014EFD0 /* AppDelegate.swift */; };
 		FF20FB8A25B93A8B0014EFD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FB8925B93A8B0014EFD0 /* SceneDelegate.swift */; };
 		FF20FB8F25B93A8B0014EFD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF20FB8D25B93A8B0014EFD0 /* Main.storyboard */; };
@@ -30,6 +29,8 @@
 		FF20FC2D25B99A820014EFD0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FC2C25B99A820014EFD0 /* MainViewController.swift */; };
 		FF20FC3225B9AF2B0014EFD0 /* MassageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FC3125B9AF2B0014EFD0 /* MassageExtension.swift */; };
 		FF37EFAD25BD2E110038AB71 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF37EFAC25BD2E110038AB71 /* CameraController.swift */; };
+		FF3C04C825BE806900936A43 /* CameraControllerEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C04C725BE806900936A43 /* CameraControllerEnum.swift */; };
+		FF3C04D525BEA33800936A43 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C04D425BEA33800936A43 /* ImageViewController.swift */; };
 		FF78993425BD9E990059EE24 /* CameraExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78993325BD9E990059EE24 /* CameraExtension.swift */; };
 		FFCD625525BA14A6004C7326 /* AFConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD625425BA14A6004C7326 /* AFConfig.swift */; };
 /* End PBXBuildFile section */
@@ -63,7 +64,6 @@
 		FBBEB94C1AA0B57B22ABD715 /* Pods_GaryCam_GaryCamUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GaryCam_GaryCamUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF0AC52025BBD57A00B7FFF4 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		FF0AC52825BBFCA000B7FFF4 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		FF0AC52D25BBFCBC00B7FFF4 /* CaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
 		FF20FB8425B93A8B0014EFD0 /* GaryCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaryCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF20FB8725B93A8B0014EFD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF20FB8925B93A8B0014EFD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +87,8 @@
 		FF20FC2C25B99A820014EFD0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FF20FC3125B9AF2B0014EFD0 /* MassageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageExtension.swift; sourceTree = "<group>"; };
 		FF37EFAC25BD2E110038AB71 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		FF3C04C725BE806900936A43 /* CameraControllerEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControllerEnum.swift; sourceTree = "<group>"; };
+		FF3C04D425BEA33800936A43 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		FF78993325BD9E990059EE24 /* CameraExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraExtension.swift; sourceTree = "<group>"; };
 		FFCD625425BA14A6004C7326 /* AFConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,6 +177,7 @@
 		FF20FB8625B93A8B0014EFD0 /* GaryCam */ = {
 			isa = PBXGroup;
 			children = (
+				FF3C04C625BE805600936A43 /* Enum */,
 				FFCD625325BA1485004C7326 /* Config */,
 				FF20FBC325B93D040014EFD0 /* Extension */,
 				FF20FBC225B93CFA0014EFD0 /* View */,
@@ -215,8 +218,8 @@
 				FF20FC1F25B98D5A0014EFD0 /* SearchSignViewController.swift */,
 				FF20FC2C25B99A820014EFD0 /* MainViewController.swift */,
 				FF0AC52825BBFCA000B7FFF4 /* CameraViewController.swift */,
-				FF0AC52D25BBFCBC00B7FFF4 /* CaptureViewController.swift */,
 				FF37EFAC25BD2E110038AB71 /* CameraController.swift */,
+				FF3C04D425BEA33800936A43 /* ImageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -247,6 +250,14 @@
 				FFCD624325BA1000004C7326 /* UserInterface */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		FF3C04C625BE805600936A43 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				FF3C04C725BE806900936A43 /* CameraControllerEnum.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 		FF78993225BD9E800059EE24 /* Camera */ = {
@@ -533,14 +544,15 @@
 				FF20FBF125B943040014EFD0 /* SignUpViewController.swift in Sources */,
 				FFCD625525BA14A6004C7326 /* AFConfig.swift in Sources */,
 				FF20FC3225B9AF2B0014EFD0 /* MassageExtension.swift in Sources */,
-				FF0AC52E25BBFCBC00B7FFF4 /* CaptureViewController.swift in Sources */,
 				FF0AC52125BBD57A00B7FFF4 /* Validation.swift in Sources */,
 				FF20FBE325B93F240014EFD0 /* SignInViewController.swift in Sources */,
 				FF20FC1825B959E70014EFD0 /* DataExtension.swift in Sources */,
 				FF20FBD525B93ED70014EFD0 /* HttpRequest.swift in Sources */,
 				FF20FB8825B93A8B0014EFD0 /* AppDelegate.swift in Sources */,
+				FF3C04D525BEA33800936A43 /* ImageViewController.swift in Sources */,
 				FF20FC2025B98D5A0014EFD0 /* SearchSignViewController.swift in Sources */,
 				FF20FB8A25B93A8B0014EFD0 /* SceneDelegate.swift in Sources */,
+				FF3C04C825BE806900936A43 /* CameraControllerEnum.swift in Sources */,
 				FF0AC52925BBFCA000B7FFF4 /* CameraViewController.swift in Sources */,
 				FF78993425BD9E990059EE24 /* CameraExtension.swift in Sources */,
 				FF20FBDB25B93EFA0014EFD0 /* Member.swift in Sources */,

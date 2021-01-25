@@ -130,7 +130,6 @@ class CameraController: UIViewController {
         self.previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         self.previewLayer?.videoGravity = AVLayerVideoGravity.resizeAspectFill
         self.previewLayer?.connection?.videoOrientation = .portrait
-        print("View Size : \(view.frame)")
         
         view.layer.insertSublayer(self.previewLayer!, at: 0)
         
@@ -197,7 +196,6 @@ class CameraController: UIViewController {
         
         let settings = AVCapturePhotoSettings()
         settings.flashMode = self.flashMode
-        
         self.photoOutput?.capturePhoto(with: settings, delegate: self)
         self.photoCaptureCompletionBlock = completion
     }
@@ -213,22 +211,5 @@ extension CameraController: AVCapturePhotoCaptureDelegate {
         } else {
             self.photoCaptureCompletionBlock?(nil, CameraControllerError.unknown)
         }
-    }
-}
-
-extension CameraController {
-    // 예상할 수 있는 에러 정의
-    enum CameraControllerError: Swift.Error {
-        case captureSessionAlreadyRunning
-        case captureSessionIsMissing
-        case inputsAreInvalid
-        case invalidOperation
-        case noCameraAvailable
-        case unknown
-    }
-
-    public enum CameraPosition {
-        case front
-        case back
     }
 }

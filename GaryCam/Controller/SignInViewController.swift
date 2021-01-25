@@ -9,8 +9,6 @@ import UIKit
 import Alamofire
 
 class SignInViewController: UIViewController, UITextFieldDelegate {
-
-    // Outlet Definition
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwdField: UITextField!
     @IBOutlet weak var searchPWButton: UIButton!
@@ -21,9 +19,8 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Keyboard Setting
+        // 키보드 세팅
         self.emailField.keyboardType = .emailAddress
-        
         self.emailField.text = "smat91@naver.com"
         self.passwdField.text = "wjdwhdans"
         
@@ -31,7 +28,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         
         self.emailField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
     }
-    // Prepare to Seguement to use Data
+    // 로그인 완료 시 세그먼트를 통한 이동
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "mainViewSegue" {
             let vc = segue.destination as? MainViewController
@@ -42,7 +39,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-    // Email TextField Event and Validation Check
+    // 이메일 형식 확인
     @objc func textFieldDidChange(field: UITextField) {
         guard let text = field.text else {
             return
@@ -59,13 +56,8 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
             }
         }
     }
-    // Search to Password Action
-    @IBAction func searchPWAction(_ sender: Any) {
-        self.emailField.text = ""
-        self.passwdField.text = ""
-    }
     // Sign In Action
-    @IBAction func signInAction(_ sender: Any) {
+    @IBAction func signInAction(_ sender: UIButton) {
         // 이메일 공백 체크
         guard let email: String = self.emailField.text,
               email.isEmpty == false else {
@@ -100,10 +92,14 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         }
         self.view.endEditing(true)
     }
-    // Sign Up Action
-    @IBAction func signUpAction(_ sender: Any) {
+    // 회원가입으로 이동
+    @IBAction func signUpAction(_ sender: UIButton) {
         self.emailField.text = ""
         self.passwdField.text = ""
     }
-
+    // 비밀번호 찾기로 이동
+    @IBAction func searchPWAction(_ sender: UIButton) {
+        self.emailField.text = ""
+        self.passwdField.text = ""
+    }
 }
