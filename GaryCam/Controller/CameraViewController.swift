@@ -124,7 +124,7 @@ extension CameraViewController {
                 print(error ?? "Image Capture Error")
                 return
             }
-            
+            // Photokit 사용 이미지 저장
             try? PHPhotoLibrary.shared().performChangesAndWait {
                 PHAssetChangeRequest.creationRequestForAsset(from: image)
                 // 앨범 뷰 이미지 수시로 교체

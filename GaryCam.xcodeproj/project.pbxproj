@@ -30,8 +30,9 @@
 		FF20FC3225B9AF2B0014EFD0 /* MassageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FC3125B9AF2B0014EFD0 /* MassageExtension.swift */; };
 		FF37EFAD25BD2E110038AB71 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF37EFAC25BD2E110038AB71 /* CameraController.swift */; };
 		FF3C04C825BE806900936A43 /* CameraControllerEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C04C725BE806900936A43 /* CameraControllerEnum.swift */; };
-		FF3C04D525BEA33800936A43 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C04D425BEA33800936A43 /* ImageViewController.swift */; };
+		FF3C04DA25BEFA9D00936A43 /* PhotoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C04D925BEFA9D00936A43 /* PhotoCollection.swift */; };
 		FF78993425BD9E990059EE24 /* CameraExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78993325BD9E990059EE24 /* CameraExtension.swift */; };
+		FF9C8D9725C0720E00C57586 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C8D9625C0720E00C57586 /* PhotoCollectionViewController.swift */; };
 		FFCD625525BA14A6004C7326 /* AFConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCD625425BA14A6004C7326 /* AFConfig.swift */; };
 /* End PBXBuildFile section */
 
@@ -88,8 +89,9 @@
 		FF20FC3125B9AF2B0014EFD0 /* MassageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageExtension.swift; sourceTree = "<group>"; };
 		FF37EFAC25BD2E110038AB71 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		FF3C04C725BE806900936A43 /* CameraControllerEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControllerEnum.swift; sourceTree = "<group>"; };
-		FF3C04D425BEA33800936A43 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		FF3C04D925BEFA9D00936A43 /* PhotoCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollection.swift; sourceTree = "<group>"; };
 		FF78993325BD9E990059EE24 /* CameraExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraExtension.swift; sourceTree = "<group>"; };
+		FF9C8D9625C0720E00C57586 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		FFCD625425BA14A6004C7326 /* AFConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,7 +221,7 @@
 				FF20FC2C25B99A820014EFD0 /* MainViewController.swift */,
 				FF0AC52825BBFCA000B7FFF4 /* CameraViewController.swift */,
 				FF37EFAC25BD2E110038AB71 /* CameraController.swift */,
-				FF3C04D425BEA33800936A43 /* ImageViewController.swift */,
+				FF9C8D9625C0720E00C57586 /* PhotoCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -264,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				FF78993325BD9E990059EE24 /* CameraExtension.swift */,
+				FF3C04D925BEFA9D00936A43 /* PhotoCollection.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -549,14 +552,15 @@
 				FF20FC1825B959E70014EFD0 /* DataExtension.swift in Sources */,
 				FF20FBD525B93ED70014EFD0 /* HttpRequest.swift in Sources */,
 				FF20FB8825B93A8B0014EFD0 /* AppDelegate.swift in Sources */,
-				FF3C04D525BEA33800936A43 /* ImageViewController.swift in Sources */,
 				FF20FC2025B98D5A0014EFD0 /* SearchSignViewController.swift in Sources */,
 				FF20FB8A25B93A8B0014EFD0 /* SceneDelegate.swift in Sources */,
 				FF3C04C825BE806900936A43 /* CameraControllerEnum.swift in Sources */,
 				FF0AC52925BBFCA000B7FFF4 /* CameraViewController.swift in Sources */,
+				FF9C8D9725C0720E00C57586 /* PhotoCollectionViewController.swift in Sources */,
 				FF78993425BD9E990059EE24 /* CameraExtension.swift in Sources */,
 				FF20FBDB25B93EFA0014EFD0 /* Member.swift in Sources */,
 				FF20FC2D25B99A820014EFD0 /* MainViewController.swift in Sources */,
+				FF3C04DA25BEFA9D00936A43 /* PhotoCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

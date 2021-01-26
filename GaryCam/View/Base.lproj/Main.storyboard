@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QV7-6X-nW0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eus-3G-1x7">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -517,21 +518,6 @@
             </objects>
             <point key="canvasLocation" x="789.85507246376812" y="770.75892857142856"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Smg-TF-dgV">
-            <objects>
-                <viewController id="agx-jZ-cW1" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fl8-yk-XiB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="jCx-VR-Ggd"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KWe-Zv-mAH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1545" y="771"/>
-        </scene>
         <!--Main View Controller-->
         <scene sceneID="sfh-6m-OzN">
             <objects>
@@ -588,6 +574,72 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7dT-Qc-af8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="790" y="88"/>
+        </scene>
+        <!--Photo Collection View Controller-->
+        <scene sceneID="xmp-yK-nWh">
+            <objects>
+                <viewController id="eus-3G-1x7" customClass="PhotoCollectionViewController" customModule="GaryCam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ehL-Ce-nhJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="602-yi-sOo">
+                                <rect key="frame" x="10" y="124" width="394" height="738"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="SyV-j7-K45">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoLibraryCell" id="dvM-ca-59c">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KtM-8e-qyw">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AjK-VN-97P">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="AjK-VN-97P" firstAttribute="leading" secondItem="KtM-8e-qyw" secondAttribute="leading" id="Ahg-Ck-LG4"/>
+                                                <constraint firstAttribute="bottom" secondItem="AjK-VN-97P" secondAttribute="bottom" id="Jws-Bx-eE5"/>
+                                                <constraint firstItem="AjK-VN-97P" firstAttribute="top" secondItem="KtM-8e-qyw" secondAttribute="top" id="Uq8-uG-unX"/>
+                                                <constraint firstAttribute="trailing" secondItem="AjK-VN-97P" secondAttribute="trailing" id="bhc-Nn-iXh"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeM-Mm-Dak">
+                                <rect key="frame" x="157.5" y="44" width="99.5" height="80"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eJh-UW-cXP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SeM-Mm-Dak" firstAttribute="centerX" secondItem="ehL-Ce-nhJ" secondAttribute="centerX" id="EOQ-Db-yp0"/>
+                            <constraint firstItem="SeM-Mm-Dak" firstAttribute="top" secondItem="eJh-UW-cXP" secondAttribute="top" id="JK7-TB-PFY"/>
+                            <constraint firstItem="602-yi-sOo" firstAttribute="leading" secondItem="eJh-UW-cXP" secondAttribute="leading" constant="10" id="KxZ-Tf-66v"/>
+                            <constraint firstItem="602-yi-sOo" firstAttribute="top" secondItem="eJh-UW-cXP" secondAttribute="top" constant="80" id="Q54-3G-iET"/>
+                            <constraint firstItem="eJh-UW-cXP" firstAttribute="bottom" secondItem="602-yi-sOo" secondAttribute="bottom" id="VAI-DE-FyJ"/>
+                            <constraint firstAttribute="trailing" secondItem="602-yi-sOo" secondAttribute="trailing" constant="10" id="mPj-kc-UqB"/>
+                            <constraint firstItem="602-yi-sOo" firstAttribute="top" secondItem="SeM-Mm-Dak" secondAttribute="bottom" id="tdO-08-zzL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photoCollectionView" destination="602-yi-sOo" id="wq1-fG-LOD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y8z-e2-v31" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1603" y="771"/>
         </scene>
     </scenes>
     <resources>
