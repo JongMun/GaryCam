@@ -57,7 +57,6 @@ class PermissionViewController: UIViewController {
         }
         
         if permissionCheckAudio() && permissionCheckPhoto() && permissionCheckPhoto() {
-            print("AAA")
             guard let loginView = self.storyboard?.instantiateViewController(identifier: "Main") else {
                 return
             }
