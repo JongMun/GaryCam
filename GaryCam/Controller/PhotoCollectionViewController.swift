@@ -11,11 +11,9 @@ import Photos
 class PhotoCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     @IBOutlet weak var photoCollectionView: UICollectionView!
     
-//    let photoCollection = PhotoCollection()
     var imageArray = [UIImage]()
     
     override func viewDidLoad() {
-//        super.viewDidLoad()
         photoCollectionView.delegate = self
         photoCollectionView.dataSource = self
         setCollectionViewLayout()
@@ -36,12 +34,10 @@ class PhotoCollectionViewController: UIViewController, UICollectionViewDelegate,
     
     func setCollectionViewLayout() {
         let layout = UICollectionViewFlowLayout()
-//        layout.sectionInset = UIEdgeInsets.zero
         layout.minimumInteritemSpacing = 1
         layout.minimumLineSpacing = 5
         
         let width = photoCollectionView.frame.width / 3.5
-        print(width)
         layout.itemSize = CGSize(width: width, height: width)
         
         photoCollectionView.collectionViewLayout = layout

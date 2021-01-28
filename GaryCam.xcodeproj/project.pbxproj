@@ -28,6 +28,8 @@
 		FF20FC2025B98D5A0014EFD0 /* SearchSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FC1F25B98D5A0014EFD0 /* SearchSignViewController.swift */; };
 		FF20FC2D25B99A820014EFD0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FC2C25B99A820014EFD0 /* MainViewController.swift */; };
 		FF20FC3225B9AF2B0014EFD0 /* MassageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20FC3125B9AF2B0014EFD0 /* MassageExtension.swift */; };
+		FF2122E225C137A20064B46A /* Permisstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2122E125C137A20064B46A /* Permisstion.swift */; };
+		FF2122EA25C14AFA0064B46A /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2122E925C14AFA0064B46A /* PermissionViewController.swift */; };
 		FF37EFAD25BD2E110038AB71 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF37EFAC25BD2E110038AB71 /* CameraController.swift */; };
 		FF3C04C825BE806900936A43 /* CameraControllerEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C04C725BE806900936A43 /* CameraControllerEnum.swift */; };
 		FF3C04DA25BEFA9D00936A43 /* PhotoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C04D925BEFA9D00936A43 /* PhotoCollection.swift */; };
@@ -87,6 +89,8 @@
 		FF20FC1F25B98D5A0014EFD0 /* SearchSignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSignViewController.swift; sourceTree = "<group>"; };
 		FF20FC2C25B99A820014EFD0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FF20FC3125B9AF2B0014EFD0 /* MassageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageExtension.swift; sourceTree = "<group>"; };
+		FF2122E125C137A20064B46A /* Permisstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permisstion.swift; sourceTree = "<group>"; };
+		FF2122E925C14AFA0064B46A /* PermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewController.swift; sourceTree = "<group>"; };
 		FF37EFAC25BD2E110038AB71 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		FF3C04C725BE806900936A43 /* CameraControllerEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControllerEnum.swift; sourceTree = "<group>"; };
 		FF3C04D925BEFA9D00936A43 /* PhotoCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollection.swift; sourceTree = "<group>"; };
@@ -215,6 +219,7 @@
 		FF20FBC025B93CEC0014EFD0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FF2122E925C14AFA0064B46A /* PermissionViewController.swift */,
 				FF20FBE225B93F240014EFD0 /* SignInViewController.swift */,
 				FF20FBF025B943040014EFD0 /* SignUpViewController.swift */,
 				FF20FC1F25B98D5A0014EFD0 /* SearchSignViewController.swift */,
@@ -245,6 +250,7 @@
 		FF20FBC325B93D040014EFD0 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FF2122E025C137890064B46A /* Permission */,
 				FF78993225BD9E800059EE24 /* Camera */,
 				FF0AC51F25BBD56600B7FFF4 /* Validation */,
 				FFCD624525BA1024004C7326 /* Network */,
@@ -252,6 +258,14 @@
 				FFCD624325BA1000004C7326 /* UserInterface */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		FF2122E025C137890064B46A /* Permission */ = {
+			isa = PBXGroup;
+			children = (
+				FF2122E125C137A20064B46A /* Permisstion.swift */,
+			);
+			path = Permission;
 			sourceTree = "<group>";
 		};
 		FF3C04C625BE805600936A43 /* Enum */ = {
@@ -543,8 +557,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF37EFAD25BD2E110038AB71 /* CameraController.swift in Sources */,
+				FF2122E225C137A20064B46A /* Permisstion.swift in Sources */,
 				FF20FC1025B9523A0014EFD0 /* UIExtension.swift in Sources */,
 				FF20FBF125B943040014EFD0 /* SignUpViewController.swift in Sources */,
+				FF2122EA25C14AFA0064B46A /* PermissionViewController.swift in Sources */,
 				FFCD625525BA14A6004C7326 /* AFConfig.swift in Sources */,
 				FF20FC3225B9AF2B0014EFD0 /* MassageExtension.swift in Sources */,
 				FF0AC52125BBD57A00B7FFF4 /* Validation.swift in Sources */,

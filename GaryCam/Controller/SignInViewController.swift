@@ -7,6 +7,7 @@
 
 import UIKit
 import Alamofire
+import AVFoundation
 
 class SignInViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailField: UITextField!
@@ -83,7 +84,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         let param: [String:String] = ["email":email, "passwd":encryptPW]
         // Alamofire를 통해 통신
         HttpRequest().getUserTempInfo(param: param) {
-            (completion) in
+            ( completion ) in
             guard let data = completion else {
                 return
             }

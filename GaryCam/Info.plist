@@ -31,6 +31,8 @@
 	<string>Permission needed to save picture to camera roll</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Permission needed for saving picture to Camera roll</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Permission needed for recording video</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

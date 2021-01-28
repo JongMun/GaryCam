@@ -22,17 +22,22 @@ class CameraViewController: UIViewController {
     @IBOutlet fileprivate var albumImage: UIImageView!
     @IBOutlet fileprivate var videoModeButton: UIButton!
     
+    @IBOutlet fileprivate var etc: UIButton!
+    
     override var prefersStatusBarHidden: Bool { return true }
     
-    var fetchResult: PHFetchResult<PHAssetCollection>!
-    let cachingImageManager: PHCachingImageManager = PHCachingImageManager()
+    var imageArray = [UIImage]()
 }
 
 extension CameraViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        styleCaptureButton()
+        // 추후 기능 추가
+        etc.isHidden = true
+        
+        getOnePhoto()
+        styleButton()
         styleAlbumImageView() 
         configureCameraController()
         addTapGetureAction()
@@ -48,11 +53,7 @@ extension CameraViewController {
         }
     }
     // 촬영 버튼 스타일링
-    func styleCaptureButton() {
-        self.captureButton.layer.borderColor = UIColor.black.cgColor
-        self.captureButton.layer.borderWidth = 2
-        self.captureButton.layer.cornerRadius = min(self.captureButton.frame.width, self.captureButton.frame.height) / 2
-        
+    func styleButton() {
         self.toggleCameraButton.tintColor = UIColor.init(hexString: "#cc66ff")
         self.toggleFlashButton.tintColor = UIColor.init(hexString: "#cc66ff")
     }
@@ -72,19 +73,35 @@ extension CameraViewController {
     // 앨범 이미지 뷰 클릭 액션
     @objc func showLibrary(tapGestureRecognizer: UITapGestureRecognizer)
     {
-        print("Tapped Image View")
-        requestPhotosPermissionCheck()
-        let tappedImage = tapGestureRecognizer.view as! UIImageView
-
-        // Your action
+        guard let cameraView = self.storyboard?.instantiateViewController(identifier: "PhotoCollection") else {
+            return
+        }
+        self.present(cameraView, animated: true)
     }
-    func showLibrary () {
-//        imageController.delegate = ImageViewController() as! UIImagePickerControllerDelegate & UINavigationControllerDelegate
-//        imageController.allowsEditing = false
-//        imageController.sourceType = .photoLibrary
-//        imageController.mediaTypes = UIImagePickerController.availableMediaTypes (for : .photoLibrary)!
-//        present(ImageViewController(), animated : true, 완료 : nil)
+    func getOnePhoto() {
+        let manager = PHImageManager.default()
         
+        let options = PHImageRequestOptions()
+        options.isSynchronous = true
+        options.deliveryMode = .opportunistic
+                
+        let fetchResult: PHFetchResult = PHAsset.fetchAssets(with: .image, options: nil)
+        
+        if fetchResult.count > 0 {
+            for i in 0..<fetchResult.count {
+                manager.requestImage(for: fetchResult.object(at: i), targetSize: CGSize(width: 200, height: 200), contentMode: .aspectFill, options: options) {
+                    (image, error) in
+                    self.imageArray.append(image!)
+                }
+            }
+            imageArray.reverse()
+            
+            DispatchQueue.main.async {
+                self.albumImage.image = self.imageArray[0]
+            }
+        } else {
+            print("You got no photos!")
+        }
     }
 }
 
@@ -131,53 +148,5 @@ extension CameraViewController {
                 self.albumImage.image = image
             }
         })
-    }
-}
-
-extension CameraViewController: UIImagePickerControllerDelegate {
-    func requestPhotosPermissionCheck() {
-        let photoAuthorizationStatusStatus = PHPhotoLibrary.authorizationStatus()
-        switch photoAuthorizationStatusStatus {
-        case .authorized:
-            print("권한이 승인되었습니다.")
-            self.getPhoto()
-        case .denied:
-            print("권한이 거부되었습니다.")
-        case .notDetermined:
-            print("권한에 대한 승인을 아직 안하셨습니다.")
-            PHPhotoLibrary.requestAuthorization() {
-                (status) in
-                switch status {
-                case .authorized:
-                    print("권한이 승인되었습니다.")
-                    self.getPhoto()
-                case .denied:
-                    print("권한이 거부되었습니다.")
-                    break
-                default:
-                    break
-                }
-            }
-        case .restricted:
-            print("권한을 부여할 수 없습니다.")
-        default:
-            break
-        }
-    }
-    func getPhoto() {
-        let albums = PHAssetCollection.fetchAssetCollections(with: .album, subtype: .smartAlbumTimelapses, options: .none)
-        let a = PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype: .smartAlbumRecentlyAdded, options: nil)
-        let collection = albums.object(at: 0)
-        let imageManager = PHImageManager()
-        let options = PHFetchOptions()
-        
-        options.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
-        let allPhotos = PHAsset.fetchAssets(in: collection, options: options)
-        
-        if let asset = allPhotos.firstObject {
-            print("Photo : \(asset)")
-        } else {
-            print("FUCK")
-        }
     }
 }

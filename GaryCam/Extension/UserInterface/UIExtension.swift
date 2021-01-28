@@ -44,6 +44,29 @@ class Button: UIButton {
         self.layer.shadowOpacity = 0.3
     }
 }
+class CaptureButton: UIButton {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    required init(coder aDecoder: NSCoder)
+    {
+        super.init(coder: aDecoder)!
+        self.layer.cornerRadius = 30
+        self.layer.masksToBounds = true
+        self.layer.borderWidth = 2
+        self.layer.borderColor = UIColor.init(hexString: "#cc66ff").cgColor
+        self.backgroundColor = UIColor.white
+        self.tintColor = UIColor.white
+        self.setTitleColor(.white, for: .normal)
+        
+        // Button Shadow
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.masksToBounds = false
+        self.layer.shadowOffset = CGSize(width: 0, height: 4)
+        self.layer.shadowRadius = 5
+        self.layer.shadowOpacity = 0.3
+    }
+}
 class ButtonTextOnly: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)

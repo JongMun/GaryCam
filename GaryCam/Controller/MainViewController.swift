@@ -25,4 +25,11 @@ class MainViewController: UIViewController {
             self.tidView.isHidden = true
         }
     }
+    
+    @IBAction func moveCameraView(_ sender: UIButton) {
+        guard let cameraView = self.storyboard?.instantiateViewController(identifier: "CameraView") else {
+            return
+        }
+        self.present(cameraView, animated: true)
+    }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eus-3G-1x7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tH7-WI-obS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -9,10 +9,124 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Permission View Controller-->
+        <scene sceneID="fho-LO-2cU">
+            <objects>
+                <viewController storyboardIdentifier="하지만" id="tH7-WI-obS" customClass="PermissionViewController" customModule="GaryCam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RSf-PA-iSv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gary's Cam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yrr-gV-eRl">
+                                <rect key="frame" x="30" y="64" width="354" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아래의 권한 목록을 모두 허용해주셔야 정상적인 이용이 가능합니다." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDc-96-f4E">
+                                <rect key="frame" x="57" y="167.5" width="300" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="3LX-3u-Z6E"/>
+                                    <constraint firstAttribute="height" constant="100" id="ai4-sW-xZZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0d-of-VNJ" customClass="Button" customModule="GaryCam" customModuleProvider="target">
+                                <rect key="frame" x="30" y="607.5" width="354" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="b3Q-dX-J68"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="시작하기"/>
+                                <connections>
+                                    <action selector="accessRequestBtn:" destination="tH7-WI-obS" eventType="touchUpInside" id="2WH-83-HGa"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zDI-En-DqN">
+                                <rect key="frame" x="30" y="337.5" width="354" height="200"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="dpH-AD-6DY">
+                                        <rect key="frame" x="0.0" y="0.0" width="174.5" height="200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카메라" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBl-u5-x5W">
+                                                <rect key="frame" x="0.0" y="0.0" width="174.5" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오디오" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOW-vp-NS3">
+                                                <rect key="frame" x="0.0" y="83.5" width="174.5" height="33"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사진첩" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1S-E6-IyL">
+                                                <rect key="frame" x="0.0" y="166.5" width="174.5" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="Smd-Gm-K6l"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="fBz-go-ujO">
+                                        <rect key="frame" x="179.5" y="0.0" width="174.5" height="200"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="O5L-wF-4xc">
+                                                <rect key="frame" x="63" y="0.0" width="51" height="33.5"/>
+                                                <color key="onTintColor" red="0.77609287500000002" green="0.70356641509999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ihg-rQ-rDQ">
+                                                <rect key="frame" x="63" y="83.5" width="51" height="33"/>
+                                                <color key="onTintColor" red="0.77609287500000002" green="0.70356641509999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VyH-rB-DJv">
+                                                <rect key="frame" x="63" y="166.5" width="51" height="33.5"/>
+                                                <color key="onTintColor" red="0.77609287500000002" green="0.70356641509999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </switch>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="1wF-QX-RjV"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7sm-R5-Hse"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dDc-96-f4E" firstAttribute="centerX" secondItem="RSf-PA-iSv" secondAttribute="centerX" id="2bc-Sr-uIc"/>
+                            <constraint firstItem="j0d-of-VNJ" firstAttribute="leading" secondItem="7sm-R5-Hse" secondAttribute="leading" constant="30" id="2fT-8H-EiW"/>
+                            <constraint firstItem="7sm-R5-Hse" firstAttribute="trailing" secondItem="Yrr-gV-eRl" secondAttribute="trailing" constant="30" id="3GY-kZ-UEc"/>
+                            <constraint firstItem="Yrr-gV-eRl" firstAttribute="top" secondItem="7sm-R5-Hse" secondAttribute="top" constant="20" id="3Pg-Cd-PCn"/>
+                            <constraint firstItem="7sm-R5-Hse" firstAttribute="trailing" secondItem="j0d-of-VNJ" secondAttribute="trailing" constant="30" id="4mU-Bu-FZo"/>
+                            <constraint firstItem="7sm-R5-Hse" firstAttribute="trailing" secondItem="zDI-En-DqN" secondAttribute="trailing" constant="30" id="Nkk-mO-Dd4"/>
+                            <constraint firstItem="dDc-96-f4E" firstAttribute="top" secondItem="Yrr-gV-eRl" secondAttribute="bottom" constant="70" id="O5a-eH-bra"/>
+                            <constraint firstItem="j0d-of-VNJ" firstAttribute="top" secondItem="zDI-En-DqN" secondAttribute="bottom" constant="70" id="YKV-Pf-0Kl"/>
+                            <constraint firstItem="Yrr-gV-eRl" firstAttribute="centerX" secondItem="RSf-PA-iSv" secondAttribute="centerX" id="Z59-8g-luf"/>
+                            <constraint firstItem="Yrr-gV-eRl" firstAttribute="leading" secondItem="7sm-R5-Hse" secondAttribute="leading" constant="30" id="mZr-YG-t8f"/>
+                            <constraint firstItem="zDI-En-DqN" firstAttribute="leading" secondItem="7sm-R5-Hse" secondAttribute="leading" constant="30" id="n9z-si-oYv"/>
+                            <constraint firstItem="zDI-En-DqN" firstAttribute="top" secondItem="dDc-96-f4E" secondAttribute="bottom" constant="70" id="tU0-Go-tQw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="audioSwitch" destination="ihg-rQ-rDQ" id="Gc4-jF-ZeO"/>
+                        <outlet property="cameraSwitch" destination="O5L-wF-4xc" id="LcQ-qV-wJR"/>
+                        <outlet property="photoSwitch" destination="VyH-rB-DJv" id="o7F-mU-4wl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sqe-m7-rAt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-713" y="88"/>
+        </scene>
         <!--Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SignInViewController" customModule="GaryCam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SignInViewController" customModule="GaryCam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -378,7 +492,7 @@
         <!--Camera View Controller-->
         <scene sceneID="fTc-3S-nIC">
             <objects>
-                <viewController id="QV7-6X-nW0" customClass="CameraViewController" customModule="GaryCam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CameraView" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QV7-6X-nW0" customClass="CameraViewController" customModule="GaryCam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qMB-ek-bLZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -457,7 +571,7 @@
                                                             <constraint firstAttribute="height" constant="60" id="w7k-kZ-6eD"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odw-m7-Itr" customClass="Button" customModule="GaryCam" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odw-m7-Itr" customClass="CaptureButton" customModule="GaryCam" customModuleProvider="target">
                                                         <rect key="frame" x="177" y="20" width="60" height="60"/>
                                                         <color key="backgroundColor" systemColor="systemTealColor"/>
                                                         <constraints>
@@ -506,9 +620,11 @@
                             <constraint firstItem="tdV-dr-YLQ" firstAttribute="trailing" secondItem="XeJ-sy-2af" secondAttribute="trailing" id="QUl-9t-I9e"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="lh5-Aw-A6Y"/>
                     <connections>
                         <outlet property="albumImage" destination="oLU-2r-Ot1" id="S80-kW-1vg"/>
                         <outlet property="captureButton" destination="odw-m7-Itr" id="906-6S-jOu"/>
+                        <outlet property="etc" destination="Xzz-JN-YlG" id="lOG-UC-fHO"/>
                         <outlet property="previewView" destination="PzJ-wN-mdv" id="nX1-EZ-yf9"/>
                         <outlet property="toggleCameraButton" destination="dh0-eO-ICc" id="OsV-fg-fK9"/>
                         <outlet property="toggleFlashButton" destination="GlS-Zp-q06" id="Tln-Hp-hkD"/>
@@ -550,18 +666,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1b-nA-Y8y" customClass="Button" customModule="GaryCam" customModuleProvider="target">
+                                <rect key="frame" x="30" y="297.5" width="354" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="rJU-gP-aHS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="카메라 바로가기"/>
+                                <connections>
+                                    <segue destination="QV7-6X-nW0" kind="show" id="NWK-QI-4br"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d3g-CL-mfF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="EM7-Ph-BeR" firstAttribute="top" secondItem="d3g-CL-mfF" secondAttribute="top" constant="20" id="2I0-IQ-aR9"/>
                             <constraint firstItem="1wx-ne-bVF" firstAttribute="top" secondItem="EM7-Ph-BeR" secondAttribute="bottom" constant="70" id="EFb-ep-cgb"/>
+                            <constraint firstItem="d3g-CL-mfF" firstAttribute="trailing" secondItem="I1b-nA-Y8y" secondAttribute="trailing" constant="30" id="I0b-yZ-XGm"/>
                             <constraint firstItem="1wx-ne-bVF" firstAttribute="leading" secondItem="d3g-CL-mfF" secondAttribute="leading" constant="30" id="Kc6-la-a51"/>
                             <constraint firstItem="d3g-CL-mfF" firstAttribute="trailing" secondItem="EM7-Ph-BeR" secondAttribute="trailing" constant="30" id="MzW-7W-90i"/>
                             <constraint firstItem="bfX-XX-jIX" firstAttribute="leading" secondItem="d3g-CL-mfF" secondAttribute="leading" constant="30" id="SZT-aw-8Bb"/>
+                            <constraint firstItem="I1b-nA-Y8y" firstAttribute="leading" secondItem="d3g-CL-mfF" secondAttribute="leading" constant="30" id="V6i-BV-b02"/>
                             <constraint firstItem="ztJ-xJ-Pnl" firstAttribute="bottom" secondItem="1wx-ne-bVF" secondAttribute="bottom" id="VIM-1S-2dH"/>
                             <constraint firstItem="ztJ-xJ-Pnl" firstAttribute="leading" secondItem="1wx-ne-bVF" secondAttribute="trailing" constant="5" id="fIa-uK-uW6"/>
                             <constraint firstItem="EM7-Ph-BeR" firstAttribute="leading" secondItem="d3g-CL-mfF" secondAttribute="leading" constant="30" id="gPf-bQ-Rtj"/>
+                            <constraint firstItem="I1b-nA-Y8y" firstAttribute="top" secondItem="EM7-Ph-BeR" secondAttribute="bottom" constant="200" id="rgT-D6-u9i"/>
                             <constraint firstItem="bfX-XX-jIX" firstAttribute="top" secondItem="1wx-ne-bVF" secondAttribute="bottom" constant="5" id="tvs-hA-pVW"/>
                         </constraints>
                     </view>
@@ -578,7 +708,7 @@
         <!--Photo Collection View Controller-->
         <scene sceneID="xmp-yK-nWh">
             <objects>
-                <viewController id="eus-3G-1x7" customClass="PhotoCollectionViewController" customModule="GaryCam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PhotoCollection" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eus-3G-1x7" customClass="PhotoCollectionViewController" customModule="GaryCam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ehL-Ce-nhJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -639,7 +769,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y8z-e2-v31" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1603" y="771"/>
+            <point key="canvasLocation" x="1554" y="771"/>
         </scene>
     </scenes>
     <resources>
